@@ -4,7 +4,7 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor](ht
 
 ### Screenshot
 
-![Screenshot for the Advice generator app coding challenge](./assets/images/screenshot.jpg)
+![Screenshot for the Advice generator app coding challenge](./assets/images/screenshot.png)
 
 
 ## Links
