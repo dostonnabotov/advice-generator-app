@@ -9,8 +9,8 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor](ht
 
 ## Links
 
-- Solution URL -  [GitHub repository]()
-- Live Site URL - [Live Site]()
+- Solution URL -  [GitHub repository](https://github.com/dostonnabotov/advice-generator-app)
+- Live Site URL - [Live Site](https://dostonnabotov.github.io/advice-generator-app/)
 
 ### Materials
 
