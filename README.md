@@ -6,14 +6,21 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor](ht
 
 ![Screenshot for the Advice generator app coding challenge](.assets/images/screenshot.jpg)
 
-### Materials
-
-- [Advice Slip API](https://api.adviceslip.com)
 
 ## Links
 
 - Solution URL -  [GitHub repository]()
 - Live Site URL - [Live Site]()
+
+### Materials
+
+- [Advice Slip API](https://api.adviceslip.com)
+
+### What I learned
+
+- working with `API`
+- setting elements with `data attributes` rather than `id`s for JavaScript part
+- `.sr-only` for improving a11y
 
 ## Author
 
