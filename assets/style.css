@@ -1,0 +1,160 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+/* =========
+  Root
+========== */
+:root {
+  --clr-accent: hsl(150, 100%, 66%);
+
+  --neutral-400: hsl(193, 38%, 86%);
+  --neutral-500: hsl(217, 19%, 38%);
+  --neutral-600: hsl(217, 19%, 24%);
+  --neutral-700: hsl(218, 23%, 16%);
+  
+  --ff-body: 'Manrope', sans-serif;
+  
+  --fw-400: 800;
+  
+  --fs-400: 1.5rem;
+}
+
+@media (min-width: 50em) {
+  :root {
+    --fs-400: 1.75rem;
+  }
+}
+
+/* =========
+  Reset
+========== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+p {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* =========
+  Global
+========== */
+body {
+  display: grid;
+  place-items: center;
+
+  font-family: var(--ff-body);
+  font-size: var(--fs-400);
+  font-weight: var(--fw-400);
+  line-height: 1.6;
+  
+  background-color: var(--neutral-700);
+  color: var(--neutral-400);
+}
+
+.flow > *:where(:not(:first-child)) {
+  margin-top: var(--flow-spacer, 1rem);
+}
+
+/* =========
+Block
+========== */
+.card {
+  --flow-spacer: 1.5rem;
+  width: min(100% - 2rem, 34rem);
+  margin-block: 2rem;
+  padding: 3.5rem 2rem;
+  
+  text-align: center;
+  background-color: var(--neutral-600);
+  border-radius: 1rem;
+  box-shadow: 0 0 15px 4px hsl(0, 0%, 0%, .15);
+  
+  position: relative;
+}
+
+@media (max-width: 50em) {
+  .card {
+    padding: 2rem 1rem;
+  }
+}
+
+.card__number {
+  font-size: 60%;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+
+  color: var(--clr-accent);
+}
+
+.card__line {
+  width: fit-content;
+
+  margin-inline: auto;
+  margin-bottom: 1.5rem;
+}
+
+/* 
+  [1]: horizontal centering trick
+  [2]: position half of its size down the card 
+*/
+.card__button {
+  --_btn-size: 4rem;
+  position: absolute;
+  left: 50%; /* [1] */
+  transform: translateX(-50%); /* [1] */
+  bottom: calc( var(--_btn-size) * -.5 ); /* [2] */
+  
+  display: block;
+  width: var(--_btn-size);
+  aspect-ratio: 1;
+  margin-inline: auto;
+  padding: 1.2em;
+  cursor: pointer;
+  
+  background-image: url('./images/icon-dice.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--clr-accent);
+  
+  border: 0;
+  outline: none;
+  border-radius: 50%;
+}
+
+.card__button:is(:hover, :focus) {
+  box-shadow: 0 0 25px 2px var(--clr-accent);
+}
+
+.card__button:active {
+  opacity: .7;
+}
+
+/* =========
+  Exception
+========== */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
