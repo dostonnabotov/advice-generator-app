@@ -9,5 +9,4 @@ btnEl.addEventListener('click', () => {
     textEl.innerText = data.slip.advice;
     idEl.innerText = data.slip.id;
   })
-  
 })
