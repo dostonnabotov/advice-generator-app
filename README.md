@@ -26,4 +26,3 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor](ht
 - Website - [Doston Nabotov](https://www.dostonnabotov.netlify.com)
 - Frontend Mentor - [@dostonnabotov](https://www.frontendmentor.io/profile/dostonnabotov)
 - Github - [@dostonnabotov](https://www.github.com/dostonnabotov)
-
